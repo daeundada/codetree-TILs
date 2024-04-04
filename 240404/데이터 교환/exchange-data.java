@@ -4,9 +4,9 @@ public class Main {
         int b=6;
         int c=7;
 
-        b=a;
-        c=b;
-        a=c;
+        a=7;
+        b=5;
+        c=6;
 
         System.out.println(a);
         System.out.println(b);
