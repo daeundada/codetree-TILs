@@ -3,6 +3,6 @@ public class Main {
         char a = 'C';
         a='T';
 
-        System.out.printf(a);
+        System.out.print(a);
     }
 }
