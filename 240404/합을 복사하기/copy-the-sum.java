@@ -6,9 +6,9 @@ public class Main {
 
         int sum= a+b+c;
 
-        int a=sum;
-        int b=sum;
-        int c=sum;
+        a=sum;
+        b=sum;
+        c=sum;
 
         System.out.print(a+" "+b+" "+c);
     }
