@@ -6,10 +6,12 @@ public class Main {
 
         int a = sc.nextInt();
         int b=a*a;
-
-        System.out.printf("%d",b);
+        
         if(a<5){
           System.out.print("tiny"); 
+        }
+        else{
+          System.out.printf("%d",b);
         }
     }
 }
