@@ -9,7 +9,7 @@ public class Main {
         int c = sc.nextInt();
         String d = sc.next();
 
-        if(a>=19 || c>=19)
+        if((b=="M"&& a>=19) || (d=="m"&&c>=19))
 		    System.out.print(1);    
         else{
             System.out.print(0);
