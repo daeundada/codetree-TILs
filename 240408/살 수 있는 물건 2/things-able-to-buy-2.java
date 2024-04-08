@@ -11,10 +11,11 @@ public class Main {
         else if(a<3000&& a>=1000)
 		    System.out.print("mask");
         else if(a<1000&&a>=500){
-            System.out.print("pen")
+            System.out.print("pen");
         }        
         else{
             System.out.print("no");
         }
+
     }
 }
