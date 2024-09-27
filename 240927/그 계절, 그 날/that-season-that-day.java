@@ -27,14 +27,23 @@ public class Main {
         }
         if(M==2){
             if(Y%4==0){
-                if(Y%100==0 && Y%400==0){
+                if(Y%100==0 && Y%400==0 && D<=29){
                     month = M;
                 }
-                else{
+                if(Y%100==0 && D<=28){
+                    month = M;
+                }
+                if(D<=28){
+                    month = M;
+                }else{
                     month = -1;
                 }
             }else{
-                month = -1;
+                if(D<=28){
+                    month = M;
+                }else{
+                    month = -1;
+                }
             }
         }
 
