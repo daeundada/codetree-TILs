@@ -9,20 +9,17 @@ public class Main {
         int M = scanner.nextInt();
         int D = scanner.nextInt();
 
-        int month = 0;
+        int month = -1;
+        String season = "";
 
         if(M==1||M==3||M==5||M==7||M==8||M==10||M==12){
             if(D<=31){
                 month = M;
-            }else{
-                month = -1;
             }
         }
         if(M==4||M==6||M==9||M==11){
             if(D<=30){
                 month = M;
-            }else{
-                month = -1;
             }
         }
         if(M==2){
@@ -33,16 +30,12 @@ public class Main {
                 if(Y%100==0 && D<=28){
                     month = M;
                 }
-                if(D<=28){
+                if(D<=29){
                     month = M;
-                }else{
-                    month = -1;
                 }
             }else{
                 if(D<=28){
                     month = M;
-                }else{
-                    month = -1;
                 }
             }
         }
@@ -59,5 +52,10 @@ public class Main {
         if(month>=12 || month<=2){
             System.out.printf("Winter");
         }
+        if(month ==-1){
+            System.out.printf("-1");
+        }
+
+
     }
 }
